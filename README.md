@@ -2,7 +2,7 @@
 A Beer information app which is made with the help of Punk Api (https://punkapi.com/documentation/v2). 
 This is a learning and showcase app to demonstrate my skills as an android developer.
 
-#Features
+## Features
 This app covers Knowledge and examples of following concepts.
 - The use of Retrofit to extract data from the Punk API.
 - The use of Rooms DB for storing local data as per users wish.
@@ -13,7 +13,7 @@ This app covers Knowledge and examples of following concepts.
 - Share Beer Information with your friend as an image which carries information about the beer.
 - Uses Palette to extract colors from beer images and apply them to the UI.
 
-#Installation
+## Installation
 To run the app, you will need to have Android Studio installed on your machine. Once you have installed Android Studio, you can follow these steps:
 
 - Clone this repository to your local machine.
@@ -22,7 +22,7 @@ To run the app, you will need to have Android Studio installed on your machine. 
 - Wait for the Gradle build to finish.
 - Run the app on an emulator or a physical device.
 
-#Credits
+## Credits
 This app was built using the following technologies:
 
 - Punk API
@@ -35,6 +35,6 @@ This app was built using the following technologies:
 - Dall.E and LOGO.com
 
 
-#Contributing
+## Contributing
 If you would like to contribute to this project, please fork this repository and submit a pull request with your changes.
 We welcome contributions of all types, including bug fixes, feature additions, and code improvements.

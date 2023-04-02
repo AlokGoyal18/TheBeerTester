@@ -1,0 +1,124 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "7f73a1e1fb724a7c627c8b863d7bdfa5",
+    "entities": [
+      {
+        "tableName": "beers",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`abv` REAL NOT NULL, `attenuation_level` REAL NOT NULL, `brewers_tips` TEXT NOT NULL, `contributed_by` TEXT NOT NULL, `description` TEXT NOT NULL, `ebc` REAL NOT NULL, `first_brewed` TEXT NOT NULL, `ibu` REAL NOT NULL, `id` INTEGER NOT NULL, `image_url` TEXT, `name` TEXT NOT NULL, `ph` REAL NOT NULL, `srm` REAL NOT NULL, `tagline` TEXT NOT NULL, `target_fg` REAL NOT NULL, `target_og` REAL NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "abv",
+            "columnName": "abv",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attenuation_level",
+            "columnName": "attenuation_level",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "brewers_tips",
+            "columnName": "brewers_tips",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "contributed_by",
+            "columnName": "contributed_by",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ebc",
+            "columnName": "ebc",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "first_brewed",
+            "columnName": "first_brewed",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ibu",
+            "columnName": "ibu",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "image_url",
+            "columnName": "image_url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ph",
+            "columnName": "ph",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "srm",
+            "columnName": "srm",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tagline",
+            "columnName": "tagline",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "target_fg",
+            "columnName": "target_fg",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "target_og",
+            "columnName": "target_og",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7f73a1e1fb724a7c627c8b863d7bdfa5')"
+    ]
+  }
+}

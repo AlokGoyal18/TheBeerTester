@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.SampleAppSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/beer_500</item>
+        <item name="colorPrimaryDark">@color/beer_700</item>
+        <item name="colorAccent">@color/beer_tint_200</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/beer_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="@color/transparent"
+        android:layout_marginTop="10dp"
+        android:tooltipText="save"
+        android:layout_above="@+id/beer_info_layout"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_notlike"/>
+    <ImageButton
+        android:id="@+id/beer_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:tooltipText="Share"
+        android:background="@color/transparent"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/beer_like"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_share"/>
+
+    <ImageView
+        android:id="@+id/beer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:src="@drawable/ic_default_beer" />
+
+    <LinearLayout
+        android:id="@+id/beer_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black_alpha_50"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/beer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Buzz"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/beer_tagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Real Bitter Experience."
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/beer_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:inputType="textMultiLine"
+            android:text="A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once."
+            android:textSize="16sp"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/beer_abv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6.3"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beer_ibu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beer_ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.4"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/beer_contributed_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Sam Mason"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
